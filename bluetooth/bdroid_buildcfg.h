@@ -1,6 +1,10 @@
 /*
- * Copyright (C) 2016 The CyanogenMod Project
- *           (C) 2017 The LineageOS Project
+ *
+ *  Copyright (c) 2013, The Linux Foundation. All rights reserved.
+ *  Not a Contribution, Apache license notifications and license are retained
+ *  for attribution purposes only.
+ *
+ * Copyright (C) 2012 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,17 +19,16 @@
  * limitations under the License.
  */
 
-package org.mokee.settings.device;
+#ifndef _BDROID_BUILDCFG_H
+#define _BDROID_BUILDCFG_H
 
-import android.os.Bundle;
-import android.preference.PreferenceActivity;
+#define BLUETOOTH_QTI_SW TRUE
 
-public class ButtonSettingsActivity extends PreferenceActivity {
+#define BTM_DEF_LOCAL_NAME   "Xiaomi Mi-4c"
+#define MAX_ACL_CONNECTIONS 7
+#define MAX_L2CAP_CHANNELS  16
 
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+#define BTA_SKIP_BLE_READ_REMOTE_FEAT TRUE
+#define BTA_BLE_SKIP_CONN_UPD  TRUE
 
-        getFragmentManager().beginTransaction().replace(android.R.id.content,
-                new ButtonSettingsFragment()).commit();
-    }
-}
+#endif

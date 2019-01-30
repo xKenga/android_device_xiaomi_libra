@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2018 The Mokee Project
+<!-- Copyright (C) 2018 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,6 +14,8 @@
      limitations under the License.
 -->
 <resources>
-    <string name="edge_gesture_title">边缘触控</string>
-    <string name="edge_gesture_summary">单指双击手机侧边，可返回上一级</string>
+    <string name="edge_gesture_title">Управление по краю</string>
+    <string name="edge_gesture_summary">Двойной тап по краю для перехода назад</string>
+    <string name="device_settings_app_name">Управление по краю</string>
+    <string name="button_panel_title">Управление по краю</string>
 </resources>
