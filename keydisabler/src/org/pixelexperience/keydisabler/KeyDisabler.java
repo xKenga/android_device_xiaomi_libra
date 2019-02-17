@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016 The CyanogenMod Project
+ * Copyright (C) 2014 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,9 +14,7 @@
  * limitations under the License.
  */
 
-package org.mokee.hardware;
-
-import org.mokee.internal.util.FileUtils;
+package org.pixelexperience.keydisabler;
 
 /*
  * Disable capacitive keys
@@ -32,8 +30,7 @@ public class KeyDisabler {
     private static String CONTROL_PATH = "/proc/touchscreen/nav_button_enable";
 
     public static boolean isSupported() {
-        return FileUtils.isFileReadable(CONTROL_PATH) &&
-            FileUtils.isFileWritable(CONTROL_PATH);
+        return FileUtils.isFileWritable(CONTROL_PATH);
     }
 
     public static boolean isActive() {
@@ -43,5 +40,4 @@ public class KeyDisabler {
     public static boolean setActive(boolean state) {
         return FileUtils.writeLine(CONTROL_PATH, (state ? "0" : "1"));
     }
-
 }

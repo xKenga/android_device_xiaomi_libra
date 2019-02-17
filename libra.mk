@@ -43,17 +43,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/keylayout/ft5x46.kl:system/vendor/usr/keylayout/ft5x46.kl \
     $(DEVICE_PATH)/keylayout/atmel-maxtouch.kl:system/vendor/usr/keylayout/atmel-maxtouch.kl \
-    $(DEVICE_PATH)/keylayout/atmel-maxtouch-edge.kl:system/vendor/usr/keylayout/atmel-maxtouch-edge.kl \
     $(DEVICE_PATH)/keylayout/synaptics_dsx.kl:system/vendor/usr/keylayout/synaptics_dsx.kl \
-    $(DEVICE_PATH)/keylayout/synaptics_dsx_edge.kl:system/vendor/usr/keylayout/synaptics_dsx_edge.kl
-
-# EdgeGesture
-PRODUCT_PACKAGES += \
-    EdgeGesture
 
 # IR
 PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-impl
+    android.hardware.ir@1.0-service.libra
 
 # Sensors
 PRODUCT_PACKAGES += \

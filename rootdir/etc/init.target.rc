@@ -91,11 +91,6 @@ on boot
     chmod 0664 /proc/touchscreen/double_tap_enable
     restorecon /proc/touchscreen/double_tap_enable
 
-    # Edge gesture
-    chown root system /proc/touchscreen/edge_touch_mode
-    chmod 0664 /proc/touchscreen/edge_touch_mode
-    restorecon /proc/touchscreen/edge_touch_mode
-
     # Keydisabler
     chown root system /proc/touchscreen/nav_button_enable
     chmod 0664 /proc/touchscreen/nav_button_enable

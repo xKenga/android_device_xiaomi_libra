@@ -10,7 +10,7 @@ vendor/lib/hw/sound_trigger.primary.msm8992.so|572ea37ea18273c0fbf85c7861b7c9eeb
 
 # Camera
 bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
-lib/hw/camera.msm8992.so:vendor/lib/hw/camera.vendor.msm8992.so|9c3b70e59eaeb0668d29a38889e410a7ded4a3ba
+vendor/lib/hw/camera.vendor.msm8992.so|9c3b70e59eaeb0668d29a38889e410a7ded4a3ba
 lib/libmm-qcamera.so:vendor/lib/libmm-qcamera.so
 lib/libmmcamera_interface.so:vendor/lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so:vendor/lib/libmmjpeg_interface.so
@@ -234,11 +234,6 @@ vendor/lib/libmmcamera_s5k3m2xm_eeprom.so
 vendor/lib/libmmcamera_s5k3m2xm_ofilm_eeprom.so
 
 # Camera firmware
-etc/firmware/cpp_firmware_v1_1_1.fw:vendor/firmware/cpp_firmware_v1_1_1.fw
-etc/firmware/cpp_firmware_v1_1_6.fw:vendor/firmware/cpp_firmware_v1_1_6.fw
-etc/firmware/cpp_firmware_v1_2_0.fw:vendor/firmware/cpp_firmware_v1_2_0.fw
-etc/firmware/cpp_firmware_v1_4_0.fw:vendor/firmware/cpp_firmware_v1_4_0.fw
-etc/firmware/cpp_firmware_v1_6_0.fw:vendor/firmware/cpp_firmware_v1_6_0.fw
 etc/firmware/cpp_firmware_v1_8_0.fw:vendor/firmware/cpp_firmware_v1_8_0.fw
 
 # Camera sensors
@@ -249,9 +244,6 @@ vendor/lib/libmmcamera_ov5670_sunny.so
 vendor/lib/libmmcamera_s5k3m2xm.so
 vendor/lib/libmmcamera_s5k3m2xm_ofilm.so
 
-# Consumer IR
-lib/hw/consumerir.msm8992.so:vendor/lib/hw/consumerir.msm8992.so
-lib64/hw/consumerir.msm8992.so:vendor/lib64/hw/consumerir.msm8992.so
 # Graphics - kanged from bullhead OPM7.181105.004
 vendor/lib/hw/vulkan.msm8992.so|8bd98116b5a586839aad4c93468fc04f044d4ef4
 vendor/lib64/hw/vulkan.msm8992.so|123f72ad06ab296028dc5d14884453630676027f
@@ -261,7 +253,6 @@ vendor/lib64/libcom_fingerprints_service.so|84184194dc22c7f82892862f142977bc2c81
 vendor/lib64/hw/fingerprint.fpc.so|9cbb143331d590b7931ef379b55d6aff09dd879b
 
 # Keystore
-vendor/lib/hw/keystore.msm8992.so
 vendor/lib64/hw/keystore.msm8992.so
 
 # Sensors
@@ -278,5 +269,4 @@ vendor/lib64/libsensor_reg.so
 etc/thermal-engine-8992.conf:vendor/etc/thermal-engine-8992.conf
 
 # Gatekeeper
-vendor/lib/hw/gatekeeper.msm8992.so
 vendor/lib64/hw/gatekeeper.msm8992.so
